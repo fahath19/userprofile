@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: rgb(211, 211, 211);
+}
+.profile-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+   max-height: 400px;
+   padding: 2rem;
+   border-radius: 14px;
+   background-color:rgb(255, 255, 255);
+   position: relative;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+}
+.profile-image{
+ position: relative;
+    width: 130px;
+    height: 130px;
+     border-radius: 50%;
+     background-color: rgb(45, 45, 209);
+     padding: 2px;
+   
+}
+.profile-image .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     border-radius: 50%;
+}
+h4{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+.profile-card::before{
+    content: " ";
+    position:absolute ;
+    top: 29px;
+
+    height: 37%;
+    width: 100%;
+    background-color: blue;
+}
+p{
+margin-top: 3px;
+}
+.follow-icon{
+    margin: 7px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.follow-icon .follow{
+    margin: 7px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+}
+.button{
+    margin: 0px 0px 13px 0px ;
+   
+}
+.btn1{
+    max-width: 100px;
+    max-height: 30px;
+    padding: 8px 26px 8px 23px;
+    text-align: center;
+    
+    border-radius: 10px;
+    background-color: #007FFF;
+    color: white;
+    border: none;
+}
+.stats span{
+    color: rgb(75, 65, 65);
+    border-right: 2px solid white;
+    margin: 0 0 0 13px;
+    padding: 0px 10px 0 0;
+}
+.ic{
+    color: black;
+}
+.stats span:last-child{
+    border: none;
+}
